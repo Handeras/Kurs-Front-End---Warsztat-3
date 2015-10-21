@@ -1,0 +1,75 @@
+/*
+Error: Invalid CSS after "#fff": expected expression (e.g. 1px, bold), was ";"
+        on line 5 of paperplane.svg
+
+1: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="58" height="58" viewBox="0 0 58 58">
+2:   <defs>
+3:     <style>
+4:       .cls-1 {
+5:         fill: #fff;
+6:         fill-rule: evenodd;
+7:       }
+8:     </style>
+9:   </defs>
+10:   <path d="M57.171,0.290 C56.872,0.095 56.529,-0.001 56.187,-0.001 C55.836,-0.001 55.486,0.099 55.182,0.304 L0.807,36.554 C0.247,36.925 -0.061,37.580 0.010,38.250 C0.079,38.918 0.515,39.495 1.139,39.743 L15.321,45.418 L21.988,57.086 C22.307,57.645 22.900,57.993 23.543,58.000 C23.550,58.000 23.555,58.000 23.562,58.000 C24.198,58.000 24.789,57.664 25.116,57.118 L28.881,50.842 L46.452,57.869 C46.668,57.957 46.896,58.000 47.124,58.000 C47.432,58.000 47.739,57.922 48.013,57.766 C48.491,57.497 48.822,57.026 48.912,56.484 L57.975,2.109 C58.093,1.398 57.778,0.683 57.171,0.290 ZM5.685,37.658 L47.689,9.653 L17.149,42.345 C16.988,42.250 16.845,42.122 16.668,42.052 L5.685,37.658 ZM18.468,43.620 C18.464,43.613 18.459,43.609 18.456,43.602 L52.789,6.853 L23.520,52.459 L18.468,43.620 ZM45.707,53.666 L30.226,47.475 C29.856,47.330 29.474,47.280 29.095,47.259 L52.934,10.305 L45.707,53.666 Z" class="cls-1"/>
+
+Backtrace:
+paperplane.svg:5
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/lexer.rb:221:in `expected!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:600:in `assert_done'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:63:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:183:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script.rb:27:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:1130:in `parse_script'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:720:in `parse_property'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:691:in `parse_property_or_rule'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:657:in `parse_line'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:535:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+C:/Ruby22-x64/bin/sass:23:in `load'
+C:/Ruby22-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"#fff\": expected expression (e.g. 1px, bold), was \";\"\A         on line 5 of paperplane.svg\A \A 1: <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" preserveAspectRatio=\"xMidYMid\" width=\"58\" height=\"58\" viewBox=\"0 0 58 58\">\A 2:   <defs>\A 3:     <style>\A 4:       .cls-1 {\A 5:         fill: #fff;\A 6:         fill-rule: evenodd;\A 7:       }\A 8:     </style>\A 9:   </defs>\A 10:   <path d=\"M57.171,0.290 C56.872,0.095 56.529,-0.001 56.187,-0.001 C55.836,-0.001 55.486,0.099 55.182,0.304 L0.807,36.554 C0.247,36.925 -0.061,37.580 0.010,38.250 C0.079,38.918 0.515,39.495 1.139,39.743 L15.321,45.418 L21.988,57.086 C22.307,57.645 22.900,57.993 23.543,58.000 C23.550,58.000 23.555,58.000 23.562,58.000 C24.198,58.000 24.789,57.664 25.116,57.118 L28.881,50.842 L46.452,57.869 C46.668,57.957 46.896,58.000 47.124,58.000 C47.432,58.000 47.739,57.922 48.013,57.766 C48.491,57.497 48.822,57.026 48.912,56.484 L57.975,2.109 C58.093,1.398 57.778,0.683 57.171,0.290 ZM5.685,37.658 L47.689,9.653 L17.149,42.345 C16.988,42.250 16.845,42.122 16.668,42.052 L5.685,37.658 ZM18.468,43.620 C18.464,43.613 18.459,43.609 18.456,43.602 L52.789,6.853 L23.520,52.459 L18.468,43.620 ZM45.707,53.666 L30.226,47.475 C29.856,47.330 29.474,47.280 29.095,47.259 L52.934,10.305 L45.707,53.666 Z\" class=\"cls-1\"/>"; }

@@ -1,0 +1,75 @@
+/*
+Error: Invalid CSS after "#fff": expected expression (e.g. 1px, bold), was ";"
+        on line 5 of photo.svg
+
+1: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="49.72" height="53.031" viewBox="0 0 49.72 53.031">
+2:   <defs>
+3:     <style>
+4:       .cls-1 {
+5:         fill: #fff;
+6:         fill-rule: evenodd;
+7:       }
+8:     </style>
+9:   </defs>
+10:   <path d="M43.080,53.022 L6.628,53.022 C2.968,53.022 -0.000,50.054 -0.000,46.394 L-0.000,6.627 C-0.000,2.967 2.968,-0.001 6.628,-0.001 L43.080,-0.001 C46.740,-0.001 49.708,2.967 49.708,6.627 L49.708,46.394 C49.708,50.054 46.740,53.022 43.080,53.022 ZM46.394,6.627 C46.394,4.800 44.907,3.313 43.080,3.313 L6.628,3.313 C4.801,3.313 3.314,4.800 3.314,6.627 L3.314,46.394 C3.314,48.219 4.801,49.708 6.628,49.708 L43.080,49.708 C44.907,49.708 46.394,48.219 46.394,46.394 L46.394,6.627 ZM41.423,39.766 L8.285,39.766 C7.369,39.766 6.628,39.026 6.628,38.109 L6.628,8.284 C6.628,7.368 7.369,6.627 8.285,6.627 L41.423,6.627 C42.339,6.627 43.080,7.368 43.080,8.284 L43.080,38.109 C43.080,39.026 42.339,39.766 41.423,39.766 ZM8.285,38.109 L33.815,38.109 L29.239,32.809 L28.278,31.718 L14.912,16.568 L8.285,24.190 L8.285,38.109 ZM41.423,8.284 L8.285,8.284 L8.285,21.683 L13.670,15.473 C13.985,15.115 14.437,14.911 14.912,14.911 C15.388,14.911 15.840,15.115 16.155,15.473 L29.241,30.304 L33.553,25.414 C33.868,25.057 34.320,24.853 34.796,24.853 C35.271,24.853 35.723,25.057 36.038,25.414 L41.423,31.265 L41.423,8.284 ZM41.423,33.767 L34.796,26.510 L30.344,31.556 L36.024,38.109 L41.423,38.109 L41.423,33.767 ZM31.482,21.539 C28.736,21.539 26.511,19.314 26.511,16.568 C26.511,13.822 28.736,11.597 31.482,11.597 C34.228,11.597 36.453,13.822 36.453,16.568 C36.453,19.314 34.228,21.539 31.482,21.539 ZM31.482,13.254 C29.655,13.254 28.168,14.741 28.168,16.568 C28.168,18.395 29.655,19.882 31.482,19.882 C33.309,19.882 34.796,18.395 34.796,16.568 C34.796,14.741 33.309,13.254 31.482,13.254 Z" class="cls-1"/>
+
+Backtrace:
+photo.svg:5
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/lexer.rb:221:in `expected!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:600:in `assert_done'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:63:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/parser.rb:183:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script.rb:27:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:1130:in `parse_script'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:720:in `parse_property'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:691:in `parse_property_or_rule'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:657:in `parse_line'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:535:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:544:in `block in build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:537:in `build_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:554:in `block in append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:553:in `append_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+C:/Ruby22-x64/bin/sass:23:in `load'
+C:/Ruby22-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"#fff\": expected expression (e.g. 1px, bold), was \";\"\A         on line 5 of photo.svg\A \A 1: <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" preserveAspectRatio=\"xMidYMid\" width=\"49.72\" height=\"53.031\" viewBox=\"0 0 49.72 53.031\">\A 2:   <defs>\A 3:     <style>\A 4:       .cls-1 {\A 5:         fill: #fff;\A 6:         fill-rule: evenodd;\A 7:       }\A 8:     </style>\A 9:   </defs>\A 10:   <path d=\"M43.080,53.022 L6.628,53.022 C2.968,53.022 -0.000,50.054 -0.000,46.394 L-0.000,6.627 C-0.000,2.967 2.968,-0.001 6.628,-0.001 L43.080,-0.001 C46.740,-0.001 49.708,2.967 49.708,6.627 L49.708,46.394 C49.708,50.054 46.740,53.022 43.080,53.022 ZM46.394,6.627 C46.394,4.800 44.907,3.313 43.080,3.313 L6.628,3.313 C4.801,3.313 3.314,4.800 3.314,6.627 L3.314,46.394 C3.314,48.219 4.801,49.708 6.628,49.708 L43.080,49.708 C44.907,49.708 46.394,48.219 46.394,46.394 L46.394,6.627 ZM41.423,39.766 L8.285,39.766 C7.369,39.766 6.628,39.026 6.628,38.109 L6.628,8.284 C6.628,7.368 7.369,6.627 8.285,6.627 L41.423,6.627 C42.339,6.627 43.080,7.368 43.080,8.284 L43.080,38.109 C43.080,39.026 42.339,39.766 41.423,39.766 ZM8.285,38.109 L33.815,38.109 L29.239,32.809 L28.278,31.718 L14.912,16.568 L8.285,24.190 L8.285,38.109 ZM41.423,8.284 L8.285,8.284 L8.285,21.683 L13.670,15.473 C13.985,15.115 14.437,14.911 14.912,14.911 C15.388,14.911 15.840,15.115 16.155,15.473 L29.241,30.304 L33.553,25.414 C33.868,25.057 34.320,24.853 34.796,24.853 C35.271,24.853 35.723,25.057 36.038,25.414 L41.423,31.265 L41.423,8.284 ZM41.423,33.767 L34.796,26.510 L30.344,31.556 L36.024,38.109 L41.423,38.109 L41.423,33.767 ZM31.482,21.539 C28.736,21.539 26.511,19.314 26.511,16.568 C26.511,13.822 28.736,11.597 31.482,11.597 C34.228,11.597 36.453,13.822 36.453,16.568 C36.453,19.314 34.228,21.539 31.482,21.539 ZM31.482,13.254 C29.655,13.254 28.168,14.741 28.168,16.568 C28.168,18.395 29.655,19.882 31.482,19.882 C33.309,19.882 34.796,18.395 34.796,16.568 C34.796,14.741 33.309,13.254 31.482,13.254 Z\" class=\"cls-1\"/>"; }
