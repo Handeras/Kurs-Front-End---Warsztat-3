@@ -11,7 +11,7 @@ header {
   overflow-x: hidden;
   background-size: initial;
   background-position: top;
-  padding-bottom: 97%;
+  padding-bottom: 6.3em;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -64,20 +64,86 @@ header {
   .headerButtons .middleColumn {
     width: 1200px;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em; }
     .headerButtons .middleColumn .leftRow {
+      margin-left: 2.5em;
       display: -webkit-flex;
       display: flex;
-      flex: 1;
       flex-direction: row;
-      align-items: center;
-      justify-content: flex-start; }
+      position: relative; }
+      .headerButtons .middleColumn .leftRow img.first {
+        position: absolute;
+        top: 20%;
+        left: 17%; }
+      .headerButtons .middleColumn .leftRow p.first {
+        color: white;
+        font-size: 1.3em;
+        position: absolute;
+        top: 65%;
+        left: 3.1em; }
+      .headerButtons .middleColumn .leftRow img.second {
+        position: absolute;
+        top: 20%;
+        right: 17%; }
+      .headerButtons .middleColumn .leftRow p.second {
+        color: white;
+        font-size: 1.3em;
+        position: absolute;
+        top: 65%;
+        right: 3.1em; }
     .headerButtons .middleColumn .rightRow {
       display: -webkit-flex;
       display: flex;
-      flex: 1;
-      justify-content: flex-end; }
+      position: relative;
+      margin-right: 2.5em; }
+      .headerButtons .middleColumn .rightRow img.first {
+        position: absolute;
+        top: 20%;
+        left: 17%; }
+      .headerButtons .middleColumn .rightRow p.first {
+        color: white;
+        font-size: 1.3em;
+        position: absolute;
+        top: 65%;
+        left: 3.1em; }
+      .headerButtons .middleColumn .rightRow img.second {
+        position: absolute;
+        top: 20%;
+        right: 17%; }
+      .headerButtons .middleColumn .rightRow p.second {
+        color: white;
+        font-size: 1.3em;
+        position: absolute;
+        top: 65%;
+        right: 2.7em; }
   .headerButtons .botColumn {
-    color: red; }
+    max-width: 1200px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -1em; }
+    .headerButtons .botColumn img:last-child {
+      position: absolute;
+      top: 2.8em;
+      left: 2em; }
+
+.mainShape {
+  content: url("../images/header/Shape%202.svg"); }
+
+.headerButtons a:nth-child(n+1):hover .mainShape {
+  content: url("../images/header/Shape%202purple.svg"); }
+
+.smallShape {
+  content: url("../images/header/Shape%202%20copy.svg"); }
+
+.headerButtons a:first-child:hover .smallShape {
+  content: url("../images/header/Shape%202%20copy%20purple.svg"); }
+
+nav {
+  width: 1200px; }
 
 /*# sourceMappingURL=style.css.map */
