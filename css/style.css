@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.purple {
+  color: #9f449b; }
+
+header {
+  background-image: url("../images/header/bgHeader.png");
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: initial;
+  background-position: top;
+  padding-bottom: 97%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.headerText {
+  color: white;
+  text-align: center; }
+  .headerText p:first-child {
+    margin-top: 0.7em;
+    font-size: 6em; }
+  .headerText p:nth-child(2) {
+    margin-top: 1.7em;
+    font-size: 3em; }
+  .headerText p:last-child {
+    margin-top: 0.7em;
+    font-size: 1.4em; }
+
+.headerButtons {
+  max-width: 1200px;
+  margin-top: 9em;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .headerButtons .topColumn {
+    display: -webkit-flex;
+    display: flex;
+    position: relative; }
+    .headerButtons .topColumn img.first {
+      position: absolute;
+      top: 20%;
+      left: 17%; }
+    .headerButtons .topColumn p.first {
+      color: white;
+      font-size: 1.3em;
+      position: absolute;
+      top: 65%;
+      left: 15%; }
+    .headerButtons .topColumn img.second {
+      position: absolute;
+      top: 20%;
+      right: 17%; }
+    .headerButtons .topColumn p.second {
+      color: white;
+      font-size: 1.3em;
+      position: absolute;
+      top: 65%;
+      right: 14%; }
+  .headerButtons .middleColumn {
+    width: 1200px;
+    display: -webkit-flex;
+    display: flex; }
+    .headerButtons .middleColumn .leftRow {
+      display: -webkit-flex;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; }
+    .headerButtons .middleColumn .rightRow {
+      display: -webkit-flex;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end; }
+  .headerButtons .botColumn {
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */
