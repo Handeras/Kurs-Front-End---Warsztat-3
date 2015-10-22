@@ -296,12 +296,75 @@ nav{
 .about{
   width: 1200px;
   margin: auto;
+  padding-bottom: 13em;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   text-align: center;
-  p{
+  flex-direction: column;
+  .name p{
+    padding-top: 3em;
     font-size: 3em;
     display: inline-block;
   }
+  .container{
+    padding-top: 10em;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    .col-1{
+      flex: 3;
+    }
+    .col-2{
+      flex: 2;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      p{
+        padding-top: 1em;
+        flex: 5;
+        font-size: 1.1em;
+        line-height: 2em;
+      }
+      a{
+        flex: 1;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        background-color: rgb(159, 68, 155);
+        border-radius: 0.3em;
+        padding-top: 1.5em;
+        width: 13em;
+        box-shadow: 0 0.2em 0 rgb(107, 46, 104);
+      }
+    }
+  }
+}
+.bgRow{
+  display: -webkit-flex;
+  display: flex;
+  background-image: url("../images/quote/base.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  flex-direction: column;
+  img{
+    padding-top: 5em;
+    flex: 1;
+    height: 8%;
+    width: 8%;
+  }
+  p{
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding-top: 2em;
+  }
+}
+.ourTeam{
+  
 }
