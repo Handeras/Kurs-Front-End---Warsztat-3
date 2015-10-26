@@ -8,7 +8,7 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    <header>
+    <header id="home" data-nav="navi">
         <div class="headerText">
            <p class="headerText">Bhagas<span class="purple">kara</span>.</p>
             <p>Fusce retrum pretium lorem semper nulla.</p>
@@ -38,13 +38,13 @@
         <p>Bhagas<span class="purple">kara</span>.</p>
         <div class="navi">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>TEAM</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
@@ -72,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about" data-nav="navi">
         <div class="name">
             <p><sub><img src="images/about/arrow-bottom.svg"></sub>
             About <span class="purple">us</span>
@@ -92,24 +92,24 @@
         <figure><img src="images/quote/icon.svg"></figure>
         <p>We lorem and ipsum your aliquam</p>
     </section>
-    <section class="ourTeam">
+    <section id="team" class="ourTeam" data-nav="navi">
         <div class="name">
             <p><sub><img src="images/about/arrow-bottom.svg"></sub>
                 Our <span class="purple">team</span>
                 <sup><img src="images/about/arrow-top.svg"></sup></p>
         </div>
         <div class="listArrows">
-            <p><img src="images/team/Shape%208.svg"><img src="images/team/arrow-left.png"><img src="images/team/Shape%208%20copy.svg"><img src="images/team/arrow-right.png"></p>
+            <p><img class="left" src="images/team/Shape%208.svg"><img src="images/team/arrow-left.png"><img class="right" src="images/team/Shape%208%20copy.svg"><img src="images/team/arrow-right.png"></p>
         </div>
         <div class="container">
             <ul>
                 <li><div class="circle"></div><p class="name">ANNE HATHAWAY</p><p>CEO/Maketing Guru</p><div class="smallCircle"><a href="#">f</a></div><div class="smallCircle"><a href="#">g</a></div></li>
-                <li><div class="circle"></div><p class="name">ANNE HATHAWAY</p><p>CEO/Maketing Guru</p><div class="smallCircle"><a href="#">f</a></div><div class="smallCircle"><a href="#">g</a></div></li>
-                <li><div class="circle"></div><p class="name">ANNE HATHAWAY</p><p>CEO/Maketing Guru</p><div class="smallCircle"><a href="#">f</a></div><div class="smallCircle"><a href="#">g</a></div></li>
+                <li><div class="circle"></div><p class="name">ANNE HATHA</p><p>CEO/Maketing Guru</p><div class="smallCircle"><a href="#">f</a></div><div class="smallCircle"><a href="#">g</a></div></li>
+                <li><div class="circle"></div><p class="name">ANNE HATHAW</p><p>CEO/Maketing Guru</p><div class="smallCircle"><a href="#">f</a></div><div class="smallCircle"><a href="#">g</a></div></li>
             </ul>
         </div>
     </section>
-    <section class="skills">
+    <section id="blog" class="skills" data-nav="navi">
         <div class="name">
             <p><sub><img src="images/about/arrow-bottom.svg"></sub>
                 Our <span class="purple">skills</span>
@@ -148,7 +148,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+    <section id="services" class="service" data-nav="navi">
         <figure><img src="images/quote/icon.svg"></figure>
         <p>Our services will lorem and ipsum your aliquam</p>
     </section>
@@ -191,7 +191,7 @@
             </ul>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio" data-nav="navi">
         <div class="name">
             <p><sub><img src="images/about/arrow-bottom.svg"></sub>
                 Our <span class="purple">portfolio</span>
@@ -259,7 +259,7 @@
             <a href="#">Watch more</a>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact" data-nav="navi">
         <div class="name">
             <p><sub><img src="images/about/arrow-bottom.svg"></sub>
                 Get <span class="purple">in touch</span>

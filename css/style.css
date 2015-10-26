@@ -8,6 +8,7 @@
 header {
   background-image: url("../images/header/bgHeader.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow-x: hidden;
   background-size: initial;
   background-position: top;
@@ -146,10 +147,14 @@ header {
 nav {
   width: 1200px;
   margin: auto;
-  padding: 2.3em 0 2em 0; }
+  padding: 2.3em 0 2em 0;
+  background: white; }
   nav p {
     display: inline-block;
     font-size: 2em; }
+  nav a {
+    color: black;
+    text-decoration: none; }
 
 .navi {
   padding-top: 1em;
@@ -300,6 +305,7 @@ nav {
 .bgRow {
   background-image: url("../images/quote/base.png");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   justify-content: center;
   flex-direction: column;
@@ -388,6 +394,8 @@ nav {
     display: -webkit-flex;
     display: flex;
     flex-direction: row; }
+    .skills .container ul li:first-of-type, .skills .container ul li:last-of-type {
+      display: none; }
   .skills .col {
     flex: 1; }
     .skills .col p:first-child {
@@ -468,6 +476,7 @@ nav {
   background-image: url("../images/quote/base.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 11em; }
@@ -681,5 +690,16 @@ footer {
   text-align: center;
   font-size: 3em;
   padding-bottom: 3em; }
+
+.sticky {
+  position: fixed;
+  z-index: 99;
+  width: 1200px;
+  padding-left: 5em;
+  padding-right: 50em;
+  top: 0; }
+
+.active {
+  color: #9f449b; }
 
 /*# sourceMappingURL=style.css.map */
