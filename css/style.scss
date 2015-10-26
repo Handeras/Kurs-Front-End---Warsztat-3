@@ -344,27 +344,317 @@ nav{
   }
 }
 .bgRow{
-  display: -webkit-flex;
-  display: flex;
   background-image: url("../images/quote/base.png");
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 20em;
   img{
-    padding-top: 5em;
-    flex: 1;
+    padding-top: 14em;
     height: 8%;
     width: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   p{
-    flex: 1;
     text-align: center;
     color: white;
     font-size: 3em;
-    padding-top: 2em;
+    padding-top: 1em;
   }
 }
 .ourTeam{
-  
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 2em;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  .name p{
+    padding-top: 3em;
+    font-size: 3em;
+    display: inline-block;
+  }
+  .listArrows {
+    position: relative;
+    padding-top: 10em;
+    img:nth-child(1){
+      padding-right: 1em;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      top: 11.5em;
+      left: 45.5%;
+    }
+    img:nth-child(4){
+      position: absolute;
+      top: 11.5em;
+      right: 45.5%;
+    }
+  }
+  ul li{
+    display: inline-block;
+    padding-left: 4.8em;
+    padding-right: 5em;
+    p.name{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-top: 3em;
+      padding-bottom: 1em;
+    }
+  }
+  .circle{
+    background-color: #bdbdbd;
+    height: 15em;
+    width: 15em;
+    border-radius: 15em;
+  }
+  .smallCircle{
+    height: 2em;
+    width: 2em;
+    border-radius: 5em;
+    border: 1px solid #bdbdbd;
+    display: inline-block;
+    margin-top: 2em;
+    line-height: 2em;
+    margin-right: 1em;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+.skills{
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 13em;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  .name p{
+    padding-top: 3em;
+    font-size: 3em;
+    display: inline-block;
+  }
+  .container {
+    padding-top: 10em;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+  }
+  .col{
+    flex: 1;
+    p:first-child{
+      display: inline-block;
+      float: left;
+      font-weight: bold;
+    }
+    p:last-child{
+      display: inline-block;
+      text-align: right;
+    }
+  }
+  .container{
+    padding-left: 5em;
+    padding-right: 5em;
+    .col:first-child{
+      margin-right: 2em;
+    }
+    .col:last-child{
+      margin-left: 2em;
+    }
+  }
+  .bars{
+    display: block;
+    padding-top: 2em;
+  }
+  .bar-11{
+    display: inline-block;
+    width: 90%;
+    height: 1em;
+    background-color: rgb(159, 68, 155);
+    margin: 0;
+    padding: 0;
+  }
+  .bar-12{
+    display: inline-block;
+    height: 1em;
+    width: 10%;
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+  }
+  .bar-21{
+    display: inline-block;
+    width: 70%;
+    height: 1em;
+    background-color: rgb(159, 68, 155);
+    margin: 0;
+    padding: 0;
+  }
+  .bar-22{
+    display: inline-block;
+    height: 1em;
+    width: 30%;
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+  }
+  .bar-31{
+    display: inline-block;
+    width: 75%;
+    height: 1em;
+    background-color: rgb(159, 68, 155);
+    margin: 0;
+    padding: 0;
+  }
+  .bar-32{
+    display: inline-block;
+    height: 1em;
+    width: 25%;
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+  }
+  .bar-41{
+    display: inline-block;
+    width: 85%;
+    height: 1em;
+    background-color: rgb(159, 68, 155);
+    margin: 0;
+    padding: 0;
+  }
+  .bar-42{
+    display: inline-block;
+    height: 1em;
+    width: 15%;
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+  }
+}
+.service{
+  background-image: url("../images/quote/base.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 11em;
+  img{
+    padding-top: 14em;
+    height: 8%;
+    width: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding-top: 1em;
+  }
+}
+.testimonials{
+  background-color: rgb(238, 238, 238);
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  .percentages{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    .perc-1, .perc-2, .perc-3, .perc-4{
+      flex: 1;
+      text-align: center;
+      p:first-child{
+        font-size: 4em;
+      }
+      p:last-child{
+        color: gray;
+      }
+    }
+  }
+  .images {
+    text-align: center;
+    padding-top: 7em;
+    .circle {
+      background-color: #bdbdbd;
+      height: 8em;
+      width: 8em;
+      border-radius: 8em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p{
+      padding-top: 1em;
+      color: gray;
+    }
+    ul li p:first-of-type{
+      font-size: 3em;
+    }
+    ul li p:last-of-type{
+      font-weight: bold;
+      padding-top: 2em;
+    }
+  }
+  .slider{
+    text-align: center;
+    padding-top: 5em;
+    ul li{
+      display: inline-block;
+    }
+    .circle{
+      height: 0.5em;
+      width: 0.5em;
+      border-radius: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid gray;
+    }
+  }
+}
+.portfolio{
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 13em;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  .name p{
+    padding-top: 3em;
+    font-size: 3em;
+    display: inline-block;
+  }
+}
+.select{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  ul li{
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    a{
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      padding: 0.2em 0.5em;
+      border-radius: 0.2em;
+    }
+    a:hover{
+      color: white;
+      background-color: #9f449b;
+      border-color: #9f449b;
+    }
+  }
 }
