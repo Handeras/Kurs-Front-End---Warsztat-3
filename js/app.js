@@ -44,52 +44,112 @@ $(function(){
        function slider(){
            var left = $(".left");
            var right = $(".right");
-           var list = $(".container ul");
-           var elements = list.length;
+           var list = $(".skills li");
+           var visibleImage = 1;
+
+           list.eq(visibleImage).show();
 
            left.click(function(event){
-               list.children(0).appendTo(list);
+               var firstChild = $(".container ul > li:first-child");
+
+               firstChild.appendTo(firstChild.parent("ul"));
+
+               list.eq(visibleImage).hide(0);
+               visibleImage++;
+               if(visibleImage >= list.length){
+                   visibleImage = 0;
+               }
+               list.eq(visibleImage).show(0);
            });
 
            right.click(function(event){
-                list.children(elements - 1).appendTo(list);
+               var lastChild = $(".container ul > li:last-child");
+               lastChild.prependTo(lastChild.parent("ul"));
+
+               list.eq(visibleImage).hide(0);
+               visibleImage--;
+               if(visibleImage < 0){
+                   visibleImage = list.length-1;
+               }
+               list.eq(visibleImage).show(0);
+           });
+       }
+
+       function autoSlide(){
+           var visibleImage = 0;
+           var quotations = $(".testimonials .images li");
+           var circles = $(".testimonials .slider li");
+
+           quotations.eq(visibleImage).show();
+           circles.eq(visibleImage).addClass("fulfill");
+
+           var slide = function(){
+               quotations.eq(visibleImage).hide(0);
+               circles.eq(visibleImage).removeClass("fulfill");
+               visibleImage++;
+               if(visibleImage >= quotations.length){
+                   visibleImage = 0;
+               }
+               quotations.eq(visibleImage).show(0);
+               circles.eq(visibleImage).addClass("fulfill");
+           };
+
+           setInterval(slide, 3000);
+       }
+
+       function watchMore(){
+            var hiddenRows = $(".hiddenRow");
+            var more = $(".more");
+
+           more.click(function(event){
+               hiddenRows.eq(0).fadeIn(1000).removeClass("hiddenRow");
+               hiddenRows = $(".hiddenRow");
+           });
+       }
+
+       function showPicture(){
+
+           $(".lightBoxTrigger").click(function(event) {
+               var image_src = $(this).siblings("img:first-of-type").attr("src");
+               var x;
+
+               if ($('#lightbox').length > 0) {
+                   $('#content').html('<img src="' + image_src + '" />');
+                   $('#lightbox').show();
+               }
+
+               else {
+                   var lightbox =
+                       '<div id="lightbox">' +
+                       '<button class="x">X</button>' +
+                       '<div id="content">' +
+                       '<img src="' + image_src +'" />' +
+                       '</div>' +
+                       '</div>';
+                   $('body').append(lightbox);
+                   x = $("button.x");
+               }
+               if(x.length !== 0) {
+                   console.log(x);
+                   x.click(function (event) {
+                       $('#lightbox').hide();
+                   });
+               }
            });
        }
 
        return {
            sticky:sticky,
-           slider:slider
+           slider:slider,
+           autoSlide:autoSlide,
+           watchMore:watchMore,
+           showPicture:showPicture
        }
    };
     var app = new Application();
     app.sticky();
-    //app.slider();
-
-    function slider(){
-        console.log("jestem w sliderze");
-        var left = $(".left");
-        var right = $(".right");
-        var list = $(".container ul");
-        var elements = list.length;
-
-        //var firstChild = $(".container ul > li:first-child");
-        //firstChild.appendTo(firstChild.parent("ul"));
-
-        //var lastChild = $(".container ul > li:last-child");
-
-        left.on("click" ,function(event){
-            var firstChild = $(".container ul > li:first-child");
-            firstChild.appendTo(firstChild.parent("ul"));
-            console.log("lewy klik");
-            //list.children(0).appendTo(list);
-        });
-
-        right.click(function(event){
-            var lastChild = $(".container ul > li:last-child");
-            lastChild.prependTo(lastChild.parent("ul"));
-            console.log("Prawy klik");
-            //list.children(elements - 1).appendTo(list);
-        });
-    }
-    var slid = slider();
+    app.slider();
+    app.autoSlide();
+    app.watchMore();
+    app.showPicture();
 });

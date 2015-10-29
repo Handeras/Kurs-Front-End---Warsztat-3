@@ -32,6 +32,7 @@ header {
     font-size: 1.4em; }
 
 .headerButtons {
+  width: 100%;
   max-width: 1200px;
   margin-top: 9em;
   display: -webkit-flex;
@@ -41,7 +42,9 @@ header {
   .headerButtons .topColumn {
     display: -webkit-flex;
     display: flex;
-    position: relative; }
+    flex-direction: row;
+    position: relative;
+    width: 30%; }
     .headerButtons .topColumn img.first {
       position: absolute;
       top: 20%;
@@ -132,6 +135,9 @@ header {
       top: 2.8em;
       left: 2em; }
 
+a #services, a #portfolio, a #about, a #team, a #blog, a #contact {
+  background-image: url("../images/header/Shape%202.svg"); }
+
 .mainShape {
   content: url("../images/header/Shape%202.svg"); }
 
@@ -145,7 +151,7 @@ header {
   content: url("../images/header/Shape%202%20copy%20purple.svg"); }
 
 nav {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding: 2.3em 0 2em 0;
   background: white; }
@@ -167,64 +173,64 @@ nav {
   background-color: #eeeeee;
   padding: 10em 0 10em 0; }
   .feature .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: -webkit-flex;
     display: flex;
     text-align: center; }
-    .feature .container .col-1 {
+    .feature .container .column-1 {
       position: relative;
       flex: 1;
       padding-right: 2.5em; }
-      .feature .container .col-1 img:last-child {
+      .feature .container .column-1 img:last-child {
         position: absolute;
         top: 4.2em;
         left: 6.3em; }
-      .feature .container .col-1 p:first-of-type {
+      .feature .container .column-1 p:first-of-type {
         font-size: 2em;
         padding-top: 1em; }
-      .feature .container .col-1 p:last-of-type {
+      .feature .container .column-1 p:last-of-type {
         font-size: 1em;
         padding-top: 1em; }
-    .feature .container .col-2 {
+    .feature .container .column-2 {
       flex: 1;
       position: relative;
       padding-right: 2.5em; }
-      .feature .container .col-2 img:last-child {
+      .feature .container .column-2 img:last-child {
         position: absolute;
         top: 4.2em;
         left: 5.9em; }
-      .feature .container .col-2 p:first-of-type {
+      .feature .container .column-2 p:first-of-type {
         font-size: 2em;
         padding-top: 1em; }
-      .feature .container .col-2 p:last-of-type {
+      .feature .container .column-2 p:last-of-type {
         font-size: 1em;
         padding-top: 1em; }
-    .feature .container .col-3 {
+    .feature .container .column-3 {
       flex: 1;
       position: relative;
       padding-right: 2.5em; }
-      .feature .container .col-3 img:last-child {
+      .feature .container .column-3 img:last-child {
         position: absolute;
         top: 4.2em;
         left: 6.9em; }
-      .feature .container .col-3 p:first-of-type {
+      .feature .container .column-3 p:first-of-type {
         font-size: 2em;
         padding-top: 1em; }
-      .feature .container .col-3 p:last-of-type {
+      .feature .container .column-3 p:last-of-type {
         font-size: 1em;
         padding-top: 1em; }
-    .feature .container .col-4 {
+    .feature .container .column-4 {
       flex: 1;
       position: relative; }
-      .feature .container .col-4 img:last-child {
+      .feature .container .column-4 img:last-child {
         position: absolute;
         top: 4.2em;
         left: 7.2em; }
-      .feature .container .col-4 p:first-of-type {
+      .feature .container .column-4 p:first-of-type {
         font-size: 2em;
         padding-top: 1em; }
-      .feature .container .col-4 p:last-of-type {
+      .feature .container .column-4 p:last-of-type {
         font-size: 1em;
         padding-top: 1em; }
 
@@ -259,7 +265,7 @@ nav {
   content: url("../images/feature/phone%20purple.svg"); }
 
 .about {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-bottom: 13em;
   display: -webkit-flex;
@@ -276,20 +282,20 @@ nav {
     display: -webkit-flex;
     display: flex;
     flex-direction: row; }
-    .about .container .col-1 {
+    .about .container .column-1 {
       flex: 3; }
-    .about .container .col-2 {
+    .about .container .column-2 {
       flex: 2;
       display: -webkit-flex;
       display: flex;
       flex-direction: column;
       text-align: left; }
-      .about .container .col-2 p {
+      .about .container .column-2 p {
         padding-top: 1em;
         flex: 5;
         font-size: 1.1em;
         line-height: 2em; }
-      .about .container .col-2 a {
+      .about .container .column-2 a {
         flex: 1;
         text-align: center;
         display: inline-block;
@@ -324,7 +330,7 @@ nav {
     padding-top: 1em; }
 
 .ourTeam {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-bottom: 2em;
   display: -webkit-flex;
@@ -338,7 +344,8 @@ nav {
     display: inline-block; }
   .ourTeam .listArrows {
     position: relative;
-    padding-top: 10em; }
+    padding-top: 10em;
+    margin-bottom: 10em; }
     .ourTeam .listArrows img:nth-child(1) {
       padding-right: 1em; }
     .ourTeam .listArrows img:nth-child(2) {
@@ -349,10 +356,15 @@ nav {
       position: absolute;
       top: 11.5em;
       right: 45.5%; }
+  .ourTeam ul {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between; }
   .ourTeam ul li {
     display: inline-block;
     padding-left: 4.8em;
-    padding-right: 5em; }
+    padding-right: 5em;
+    width: 240px; }
     .ourTeam ul li p.name {
       font-size: 1.5em;
       font-weight: bold;
@@ -377,7 +389,7 @@ nav {
       color: black; }
 
 .skills {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-bottom: 13em;
   display: -webkit-flex;
@@ -394,8 +406,8 @@ nav {
     display: -webkit-flex;
     display: flex;
     flex-direction: row; }
-    .skills .container ul li:first-of-type, .skills .container ul li:last-of-type {
-      display: none; }
+  .skills ul li {
+    display: none; }
   .skills .col {
     flex: 1; }
     .skills .col p:first-child {
@@ -524,6 +536,8 @@ nav {
     .testimonials .images p {
       padding-top: 1em;
       color: gray; }
+    .testimonials .images li {
+      display: none; }
     .testimonials .images ul li p:first-of-type {
       font-size: 3em; }
     .testimonials .images ul li p:last-of-type {
@@ -542,8 +556,12 @@ nav {
       margin-right: auto;
       border: 1px solid gray; }
 
+.fulfill {
+  background: black;
+  border-radius: 0.5em; }
+
 .portfolio {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-bottom: 3em;
   display: -webkit-flex;
@@ -562,7 +580,7 @@ nav {
     .portfolio .row figure {
       display: inline-block;
       position: relative; }
-      .portfolio .row figure P:first-of-type {
+      .portfolio .row figure p:first-of-type {
         padding-top: 0.5em;
         font-size: 2em; }
       .portfolio .row figure p:last-of-type {
@@ -602,7 +620,7 @@ nav {
       background-color: #9f449b;
       border-color: #9f449b; }
 
-.more a {
+.more button {
   flex: 1;
   text-align: center;
   display: inline-block;
@@ -617,7 +635,7 @@ nav {
   box-shadow: 0 0.2em 0 #6b2e68; }
 
 .contact {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-bottom: 13em;
   display: -webkit-flex;
@@ -693,13 +711,35 @@ footer {
 
 .sticky {
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   width: 1200px;
+  margin: auto;
   padding-left: 5em;
   padding-right: 50em;
   top: 0; }
 
 .active {
   color: #9f449b; }
+
+.row.hiddenRow {
+  display: none; }
+
+#lightbox {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: 99; }
+
+.x {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em; }
 
 /*# sourceMappingURL=style.css.map */
