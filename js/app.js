@@ -49,7 +49,7 @@ $(function(){
 
            list.eq(visibleImage).show();
 
-           left.click(function(event){
+           left.on("click", function(event){
                var firstChild = $(".container ul > li:first-child");
 
                firstChild.appendTo(firstChild.parent("ul"));
@@ -62,7 +62,7 @@ $(function(){
                list.eq(visibleImage).show(0);
            });
 
-           right.click(function(event){
+           right.on("click",function(event){
                var lastChild = $(".container ul > li:last-child");
                lastChild.prependTo(lastChild.parent("ul"));
 
@@ -101,7 +101,7 @@ $(function(){
            var hiddenRows = $(".hidden");
            var more = $(".more");
 
-           more.click(function(event){
+           more.on("click", function(event){
                for(var i = 0; i < 3; i++){
                    hiddenRows.eq(i).fadeIn(1000).removeClass("hidden");
                }
@@ -111,7 +111,7 @@ $(function(){
 
        function showPicture(){
 
-           $(".lightBoxTrigger").click(function(event) {
+           $(".lightBoxTrigger").on("click", function(event) {
                var image_src = $(this).siblings("img:first-of-type").attr("src");
                var x;
 
