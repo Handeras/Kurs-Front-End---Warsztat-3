@@ -53,7 +53,7 @@ header {
     .headerButtons .topColumn img {
       padding-top: 20%; }
     .headerButtons .topColumn a {
-      background-image: url("../images/header/Shape%202.svg");
+      background-image: url("../images/header/Shape2.svg");
       background-repeat: no-repeat;
       width: 175px;
       height: 189px;
@@ -69,7 +69,7 @@ header {
         color: white;
         font-size: 1.3em; }
     .headerButtons .topColumn a:hover {
-      background-image: url("../images/header/Shape%202purple.svg"); }
+      background-image: url("../images/header/Shape2purple.svg"); }
   .headerButtons .middleColumn {
     display: flex;
     justify-content: space-between;
@@ -91,7 +91,7 @@ header {
       .headerButtons .middleColumn .leftRow img, .headerButtons .middleColumn .rightRow img {
         padding-top: 20%; }
       .headerButtons .middleColumn .leftRow a, .headerButtons .middleColumn .rightRow a {
-        background-image: url("../images/header/Shape%202.svg");
+        background-image: url("../images/header/Shape2.svg");
         background-repeat: no-repeat;
         width: 175px;
         height: 189px;
@@ -107,14 +107,14 @@ header {
           color: white;
           font-size: 1.3em; }
       .headerButtons .middleColumn .leftRow a:hover, .headerButtons .middleColumn .rightRow a:hover {
-        background-image: url("../images/header/Shape%202purple.svg"); }
+        background-image: url("../images/header/Shape2purple.svg"); }
   .headerButtons .botColumn {
     display: -webkit-flex;
     display: flex;
     position: relative;
     align-items: center; }
     .headerButtons .botColumn a {
-      background-image: url("../images/header/Shape%202%20copy.svg");
+      background-image: url("../images/header/Shape2copy.svg");
       background-repeat: no-repeat;
       width: 94px;
       height: 101px;
@@ -125,11 +125,9 @@ header {
       text-decoration: none;
       justify-content: center; }
     .headerButtons .botColumn a:hover {
-      background-image: url("../images/header/Shape%202%20copy%20purple.svg"); }
+      background-image: url("../images/header/Shape2copypurple.svg"); }
 
 nav {
-  max-width: 1200px;
-  margin: auto;
   padding: 2.3em 0 2em 0;
   background: white;
   display: flex;
@@ -147,14 +145,19 @@ nav {
         font-size: 0.8em; } }
 
 .navi {
+  width: 1200px;
+  margin: auto;
   padding-top: 1em;
-  float: right; }
+  display: flex;
+  justify-content: space-between; }
   @media screen and (max-width: 800px) {
     .navi {
       padding-top: 0.45em; } }
-  .navi ul li {
-    display: inline-block;
-    padding-left: 1.5em; }
+  .navi ul {
+    display: flex; }
+    .navi ul li {
+      list-style-type: none;
+      padding-left: 1.5em; }
 
 .feature {
   background-color: #eeeeee;
@@ -175,7 +178,7 @@ nav {
     align-items: center;
     align-content: space-between; }
     .feature .column-1 a {
-      background-image: url("../images/feature/Shape%202%20copy%203.svg");
+      background-image: url("../images/feature/Shape2copy3.svg");
       width: 180px;
       height: 194px;
       background-repeat: no-repeat;
@@ -202,7 +205,7 @@ nav {
     align-items: center;
     align-content: space-between; }
     .feature .column-2 a {
-      background-image: url("../images/feature/Shape%202%20copy%203.svg");
+      background-image: url("../images/feature/Shape2copy3.svg");
       width: 180px;
       height: 194px;
       background-repeat: no-repeat;
@@ -229,7 +232,7 @@ nav {
     align-items: center;
     align-content: space-between; }
     .feature .column-3 a {
-      background-image: url("../images/feature/Shape%202%20copy%203.svg");
+      background-image: url("../images/feature/Shape2copy3.svg");
       width: 180px;
       height: 194px;
       background-repeat: no-repeat;
@@ -256,7 +259,7 @@ nav {
     align-items: center;
     align-content: space-between; }
     .feature .column-4 a {
-      background-image: url("../images/feature/Shape%202%20copy%203.svg");
+      background-image: url("../images/feature/Shape2copy3.svg");
       width: 180px;
       height: 194px;
       background-repeat: no-repeat;
@@ -277,15 +280,15 @@ nav {
       font-size: 1em;
       padding-top: 1em; }
   .feature a:hover {
-    background-image: url("../images/feature/Shape%202%20copy%203purple.svg"); }
+    background-image: url("../images/feature/Shape2copy3purple.svg"); }
   .feature .column-1 a:hover > img {
-    content: url("../images/feature/heart%20purple.svg"); }
+    content: url("../images/feature/heartpurple.svg"); }
   .feature .column-2 a:hover > img {
-    content: url("../images/feature/diamond%20purple.svg"); }
+    content: url("../images/feature/diamondpurple.svg"); }
   .feature .column-3 a:hover > img {
-    content: url("../images/feature/cup%20purple.svg"); }
+    content: url("../images/feature/cuppurple.svg"); }
   .feature .column-4 a:hover > img {
-    content: url("../images/feature/phone%20purple.svg"); }
+    content: url("../images/feature/phonepurple.svg"); }
 
 .about {
   max-width: 1200px;
@@ -387,7 +390,7 @@ nav {
     justify-content: center;
     padding: 10% 0 10% 0; }
     .ourTeam .listArrows .left, .ourTeam .listArrows .right {
-      background-image: url("../images/team/Shape%208.svg");
+      background-image: url("../images/team/Shape8.svg");
       width: 68.844px;
       height: 74.34px;
       background-repeat: no-repeat;
@@ -737,9 +740,7 @@ footer {
   z-index: 10;
   width: 100%;
   margin: auto;
-  top: 0;
-  display: flex;
-  justify-content: center; }
+  top: 0; }
 
 .active {
   color: #9f449b; }
@@ -749,7 +750,6 @@ footer {
 
 #lightbox {
   position: fixed;
-  /* keeps the lightbox window in the current viewport */
   top: 0;
   left: 0;
   width: 100%;
