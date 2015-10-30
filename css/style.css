@@ -301,8 +301,7 @@ nav {
   flex-direction: column; }
   .about .name p {
     padding-top: 3em;
-    font-size: 3em;
-    display: inline-block; }
+    font-size: 3em; }
   .about .container {
     padding-top: 10em;
     display: -webkit-flex;
@@ -382,8 +381,7 @@ nav {
   flex-direction: column; }
   .ourTeam .name p {
     padding-top: 3em;
-    font-size: 3em;
-    display: inline-block; }
+    font-size: 3em; }
   .ourTeam .listArrows {
     display: flex;
     flex-direction: row;
@@ -403,13 +401,13 @@ nav {
   .ourTeam ul {
     display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
-    list-style-type: none; }
+    justify-content: space-around; }
   .ourTeam ul li {
     width: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    list-style-type: none; }
     .ourTeam ul li p.name {
       font-size: 1.2em;
       font-weight: bold;
@@ -444,8 +442,7 @@ nav {
   flex-direction: column; }
   .skills .name p {
     padding-top: 3em;
-    font-size: 3em;
-    display: inline-block; }
+    font-size: 3em; }
   .skills .container {
     padding-top: 10em;
     display: -webkit-flex;
@@ -595,8 +592,7 @@ nav {
   flex-direction: column; }
   .portfolio .name p {
     padding-top: 3em;
-    font-size: 3em;
-    display: inline-block; }
+    font-size: 3em; }
   .portfolio .images {
     display: flex;
     justify-content: space-between;
@@ -671,8 +667,7 @@ nav {
   flex-direction: column; }
   .contact .name p {
     padding-top: 3em;
-    font-size: 3em;
-    display: inline-block; }
+    font-size: 3em; }
   .contact .container {
     padding-top: 10em;
     display: -webkit-flex;

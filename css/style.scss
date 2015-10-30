@@ -254,7 +254,6 @@ header{
   .name p{
     padding-top: 3em;
     font-size: 3em;
-    display: inline-block;
   }
   .container {
     padding-top: 10em;
@@ -344,7 +343,6 @@ header{
   .name p {
     padding-top: 3em;
     font-size: 3em;
-    display: inline-block;
   }
   .listArrows {
     display: flex;
@@ -368,13 +366,13 @@ header{
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
   }
   ul li{
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    list-style-type: none;
     p.name{
       font-size: 1.2em;
       font-weight: bold;
@@ -415,7 +413,6 @@ header{
     .name p{
       padding-top: 3em;
       font-size: 3em;
-      display: inline-block;
     }
     .container {
       padding-top: 10em;
@@ -597,7 +594,6 @@ header{
   .name p{
     padding-top: 3em;
     font-size: 3em;
-    display: inline-block;
   }
   .images{
     display: flex;
@@ -690,7 +686,6 @@ header{
     .name p{
       padding-top: 3em;
       font-size: 3em;
-      display: inline-block;
     }
     .container{
       padding-top: 10em;
