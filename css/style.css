@@ -136,13 +136,22 @@ nav {
   justify-content: space-between; }
   nav p {
     font-size: 2em; }
+    @media screen and (max-width: 800px) {
+      nav p {
+        font-size: 1.5em; } }
   nav a {
     color: black;
     text-decoration: none; }
+    @media screen and (max-width: 800px) {
+      nav a {
+        font-size: 0.8em; } }
 
 .navi {
   padding-top: 1em;
   float: right; }
+  @media screen and (max-width: 800px) {
+    .navi {
+      padding-top: 0.45em; } }
   .navi ul li {
     display: inline-block;
     padding-left: 1.5em; }
@@ -176,6 +185,10 @@ nav {
       align-items: center;
       justify-content: center;
       text-decoration: none; }
+      @media screen and (max-width: 750px) {
+        .feature .column-1 a {
+          width: 130px;
+          height: 141px; } }
     .feature .column-1 p:first-of-type {
       font-size: 2em;
       padding-top: 1em; }
@@ -199,6 +212,10 @@ nav {
       align-items: center;
       justify-content: center;
       text-decoration: none; }
+      @media screen and (max-width: 750px) {
+        .feature .column-2 a {
+          width: 130px;
+          height: 141px; } }
     .feature .column-2 p:first-of-type {
       font-size: 2em;
       padding-top: 1em; }
@@ -222,6 +239,10 @@ nav {
       align-items: center;
       justify-content: center;
       text-decoration: none; }
+      @media screen and (max-width: 750px) {
+        .feature .column-3 a {
+          width: 130px;
+          height: 141px; } }
     .feature .column-3 p:first-of-type {
       font-size: 2em;
       padding-top: 1em; }
@@ -245,6 +266,10 @@ nav {
       align-items: center;
       justify-content: center;
       text-decoration: none; }
+      @media screen and (max-width: 750px) {
+        .feature .column-4 a {
+          width: 130px;
+          height: 141px; } }
     .feature .column-4 p:first-of-type {
       font-size: 2em;
       padding-top: 1em; }
@@ -573,6 +598,10 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media screen and (max-width: 736px) {
+      .portfolio .images {
+        flex-direction: column;
+        align-items: center; } }
   .portfolio .picture {
     display: flex;
     justify-content: space-between;
@@ -706,11 +735,11 @@ footer {
 .sticky {
   position: fixed;
   z-index: 10;
-  width: 1200px;
+  width: 100%;
   margin: auto;
-  padding-left: 5em;
-  padding-right: 50em;
-  top: 0; }
+  top: 0;
+  display: flex;
+  justify-content: center; }
 
 .active {
   color: #9f449b; }
