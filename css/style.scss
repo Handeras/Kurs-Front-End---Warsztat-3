@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-@function get-vw($target){
-  @return $target * 1.16666 * 1vw;
-}
 .purple{
   color: rgb(159, 68, 155);
 }
