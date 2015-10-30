@@ -98,12 +98,14 @@ $(function(){
        }
 
        function watchMore(){
-            var hiddenRows = $(".hiddenRow");
-            var more = $(".more");
+           var hiddenRows = $(".hidden");
+           var more = $(".more");
 
            more.click(function(event){
-               hiddenRows.eq(0).fadeIn(1000).removeClass("hiddenRow");
-               hiddenRows = $(".hiddenRow");
+               for(var i = 0; i < 3; i++){
+                   hiddenRows.eq(i).fadeIn(1000).removeClass("hidden");
+               }
+               hiddenRows = $(".hidden");
            });
        }
 
